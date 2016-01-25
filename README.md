@@ -1,2 +1,0 @@
-# PaidIt
-Document recording app

@@ -10,7 +10,7 @@
     tools:showIn="@layout/activity_main" tools:context=".MainActivity"
 
     android:clickable="true"
-    android:background="#2975cc">
+    android:background="#cbcbcb">
 
 
 
@@ -21,8 +21,85 @@
     <ImageView
         android:adjustViewBounds="true"
         android:layout_width="350dp"
-        android:layout_height="300dp"
+        android:layout_height="100dp"
         android:id="@+id/image_view"
         android:layout_gravity="center_horizontal"
+        android:background="#ffffff"
+        android:layout_marginBottom="134dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView android:id="@+id/checklogo" android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:src="@drawable/as"
+        android:layout_gravity="center"
+        android:layout_above="@+id/textView3"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Name"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etName"
+        android:id="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_alignRight="@+id/whoPay"
+        android:layout_alignEnd="@+id/whoPay"
         android:background="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Who are you paying to?"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/whoPay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView3" />
+    <EditText
+        android:id="@+id/whoPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignRight="@+id/etAmount"
+        android:layout_alignEnd="@+id/etAmount"
+        android:background="#ffffff" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Total Amount on Check"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etAmount"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView2" />
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_alignRight="@+id/image_view"
+        android:layout_alignEnd="@+id/image_view"
+        android:background="#ffffff" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Image of Check"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/image_view"
+        android:id="@+id/textView" />
+
+
+
 </RelativeLayout>

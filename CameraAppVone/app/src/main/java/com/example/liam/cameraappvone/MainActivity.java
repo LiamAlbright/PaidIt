@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-         imageView = (ImageView) findViewById(R.id.image_view);
+        imageView = (ImageView) findViewById(R.id.image_view);
         setSupportActionBar(toolbar);
 
 
@@ -123,8 +123,8 @@ public class MainActivity extends AppCompatActivity {
         if(!folder.exists()){
             folder.mkdir();
         }
-      //  String formattedDate=;
-      // File image_file = new File(folder, c.getTime() +"cam_image.jpg" );
+        //  String formattedDate=;
+        // File image_file = new File(folder, c.getTime() +"cam_image.jpg" );
         timeStamp= c.getTime().toString();
 
         File image_file = new File(folder, "cam_image.jpg" );
@@ -152,15 +152,15 @@ public class MainActivity extends AppCompatActivity {
 
 
         //ImageView iv  = (ImageView)waypointListView.findViewById(R.id.waypoint_picker_photo);
-      //  Bitmap d = new BitmapDrawable(ctx.getResources(), w.photo.getAbsolutePath()).getBitmap();
-      //  int nh = (int) ( d.getHeight() * (512.0 / d.getWidth()) );
+        //  Bitmap d = new BitmapDrawable(ctx.getResources(), w.photo.getAbsolutePath()).getBitmap();
+        //  int nh = (int) ( d.getHeight() * (512.0 / d.getWidth()) );
         //Bitmap scaled = Bitmap.createScaledBitmap(d, 512, nh, true);
         //iv.setImageBitmap(scaled);
         //new File("image_file").getName();
         //System.out.print(timeStamp);
         String path = "storage/emulated/0/CameraAppVone/"+ getFile().getName();
-          //img = Drawable.createFromPath(path);
-       //  bitmap = ((BitmapDrawable) img).getBitmap();
+        //img = Drawable.createFromPath(path);
+        //  bitmap = ((BitmapDrawable) img).getBitmap();
         //d = new BitmapDrawable(getResources(), Bitmap.createScaledBitmap(bitmap, 50, 50, true));
 
         imageView.setImageDrawable(Drawable.createFromPath(path));
@@ -189,8 +189,6 @@ public class MainActivity extends AppCompatActivity {
         android:layout_above="@+id/bEmail"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
-
-
     <Button
         android:id="@+id/bEmail"
         android:text="Email"
